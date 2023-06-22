@@ -18,15 +18,15 @@
       <h2 class="subtitle">Front End Developer</h2>
       <nav>
         <ul class="navigation">
-          <li class="nav-item"><a href="/acerca-de">Acerca de</a></li>
-          <li class="nav-item"><a href="">Mis Proyectos</a></li>
-          <li class="nav-item"><a href="">Contacto</a></li>
+          <li class="nav-item"><a href="#acerca-de">Acerca de</a></li>
+          <li class="nav-item"><a href="#proyectos">Mis Proyectos</a></li>
+          <li class="nav-item"><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
+      <section id="acerca-de">
         <h2 class="header">Acerca de</h2>
         <div>
           <p class="intro">
@@ -40,56 +40,108 @@
           quieres hablar de tecnología, accesibilidad o gatos!
         </p>
         <ul class="social-media">
+          
           <li>
-            <a href="https://twitter.com/gmzjuliana" target="_blank"
-              ><img src="images/twitter.png"
-            /></a>
+            <a href="https://twitter.com/gmzjuliana" target="_blank">
+              <img src="images/twitter.png" alt="twitter"/>
+            </a>
           </li>
+          
           <li>
-            <a href="https://github.com/gmzjuliana" target="_blank"
-            ><img src="images/github-logo.png"
-            /></a>
+            <a href="https://github.com/gmzjuliana" target="_blank">
+              <img src="images/github-logo.png" alt="github"/>
+            </a>
           </li>
+          
           <li>
-            <a href="https://www.linkedin.com/in/gomezjuliana/" target="_blank"
-            ><img src="images/linkedin.png"
-            /></a>
+            <a href="https://www.linkedin.com/in/gomezjuliana/" target="_blank">
+              <img src="images/linkedin.png" alt="linkedin"/>
+            </a>
           </li>
+
         </ul>
       </div>
     </section>
 
-      <section>
-        <h2 class="header">Mis Proyectos</h2>
-        <div class="carousel">
-          <div class="arrow arrow-left"></div>
-          <div class="window">
-            <ul class="project-container">
-              <li class="project project1"><button><img src="/images/project1.png"></button></li>
-              <li class="project project2"><button><img src="/images/project1.png"></button></li>
-              <li class="project project3"><button><img src="/images/project1.png"></button></li>
-              <li class="project project4"><button><img src="/images/project1.png"></button></li>
-              <li class="project project5"><button><img src="/images/project1.png"></button></li>
-            </ul>
-          </div>
-          <div class="arrow arrow-right"></div>
+    <section id="proyectos">
+      <h2 class="header">Mis Proyectos</h2>
+      <div class="carousel">
+        <div class="arrow arrow-left" aria-label="backward button"></div>
+        <div class="window">
+          <ul class="project-container">
+            
+            <li class="project project1">
+              <button>
+                <img src="/images/project1.png" alt="Mi primer proyecto">
+              </button>
+            </li>
+            
+            <li class="project project2">
+              <button>
+                <img src="/images/project1.png" alt="Mi segundo proyecto">
+              </button>
+            </li>
+            
+            <li class="project project3">
+              <button>
+                <img src="/images/project1.png" alt="Mi tercer proyecto">
+              </button>
+            </li>
+            
+            <li class="project project4" aria-hidden="true">
+              <button>
+                <img src="/images/project1.png" alt="Mi cuarto proyecto">
+              </button>
+            </li>
+            
+            <li class="project project5" aria-hidden="true">
+              <button>
+                <img src="/images/project1.png" alt="Mi quinto proyecto">
+              </button>
+            </li>
+
+          </ul>
         </div>
-      </section>
+        <div class="arrow arrow-right" aria-label="forward button"></div>
+      </div>
+    </section>
   </main>
 
-    <div class="contact-section">
-      <div class="header">Contacto</div>
+    <form 
+      id="contacto"
+      class="contact-section"
+    >
+      <h2 class="header">Contacto</h2>
       <div class="form-container">
-        Nombre<input type="text" /> <br />
-        Correo<input type="text" /> <br />
-        <div class="message-input">Mensaje<input type="text" /> <br /></div>
-        <div class="send-button">Enviar</div>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" /> 
+        
+        <br />
+        
+        <label for="Correo">Correo</label>
+        <input type="email" /> 
+        
+        <br />
+        
+        <label for="Mensaje">Mensaje</label>
+        <textarea class="message-input" name="mensaje" id="" cols="30" rows="10"></textarea>
+        
+        <br />
+        
+        <button 
+          class="send-button"
+          type="button" 
+        >
+          Enviar
+        </button>
       </div>
-    </div>
-    <div class="notification">El formulario fue enviado sin errores</div>
+    </form>
+
+    <p class="notification">El formulario fue enviado sin errores</p>
     <div class="modal-container">
       <div class="modal">
-        Ejemplo de un proyecto mio
+        <p>Ejemplo de un proyecto mio</p>
         <div class="modal-project-image"></div>
       </div>
     </div>
