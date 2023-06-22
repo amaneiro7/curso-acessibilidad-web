@@ -56,6 +56,22 @@ body, header, section {
   flex-direction: column;
   width: 100%;
 }
+
+.skip-link {
+  height: 0;
+}
+
+.skip-link:focus,
+.skip-link:active {
+  background: var(--verde);
+  color: var(--gris-oscuro);
+  border-radius: .25rem;
+  font-family: var(--secondary-font);
+  height: auto;
+  margin-block: 1rem .50rem;
+  padding: .50rem;
+  text-decoration: none;
+}
 p, label {
   font-size: 16px;
   line-height: 1.5rem;
