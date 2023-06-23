@@ -326,12 +326,17 @@ textarea:focus {
   transform: scale(.95);
 }
 
+#name-error {
+  color: var(--blanco);
+  font-weight: var(--secondary-font);
+}
+
 .notification {
   align-items: center;
   background-color: var(--verde);
   border-radius: 5px;
   box-shadow: 8px 16px 32px 0px var(--shadow);
-  color: var(--blanco);
+  color: var(--gris-oscuro);
   display: none;
   font-family: var(--secondary-font);
   height: 50px;
@@ -342,37 +347,34 @@ textarea:focus {
   width: 300px;
 }
 
-.modal-container {
+.modal-container.active {
+  display: flex;
   align-items: center;
-  background-color: rgba(000, 000, 000, 0.2);
+  background-color: rgba(000, 000, 000, 0.5);
   width: 50%;
   height: 100vh;
-  justify-content: center;
-  position: fixed;
+  justify-content: center;  
   width: 100vw;
 }
 
-.modal {
-  align-items: center;
-  background-color: var(--gris-oscuro);
-  border-radius: 5px;
-  border: 2px solid #000;
+#modal-header {
+  outline: 3px solid var(--verde);
+  font-size: 2.5rem;
+  margin-bottom: .25rem;
+  color: var(--blanco);  
+}
+
+.modal.active {
   display: flex;
-  flex-direction: column;
-  height: 600px;
+  align-items: center;
   justify-content: center;
-  position: fixed;
+  gap: .5rem;
+  background-color: var(--gris-oscuro);
+  border-radius: 5px;  
+  border: 2px solid #000;
+  flex-direction: column;
+  height: 600px;  
   top: 5%;
   width: 700px;
   padding: 56px;
-  color: var(--blanco);
-}
-
-.modal-project-image {
-  background: center / cover no-repeat url(./images/project1.png);
-  border-radius: 5px;
-  border: 2px solid #000;
-  height: 400px;
-  margin: 16px;
-  width: 550px;
 }

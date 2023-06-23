@@ -105,15 +105,14 @@
     </section>
   </main>
 
-    <form 
-      id="contacto"
-      class="contact-section"
-    >
+    <footer id="contacto" class="contact-section">
       <h2 class="header">Contacto</h2>
-      <div class="form-container">
+      <p class="intro">Puedes usar el formulario que sigue para mandarme un mensaje</p>
+      <form class="form-container">
 
-        <label for="nombre">Nombre</label>
-        <input type="text" /> 
+        <label data-name-label for="nombre">Nombre</label>
+        <input type="text" id="name" /> 
+        <span id="name-error" aria-live="assertive"></span>
         
         <br />
         
@@ -133,13 +132,13 @@
         >
           Enviar
         </button>
-      </div>
-    </form>
+      </form>
+    </footer>
 
-    <p class="notification">El formulario fue enviado sin errores</p>
+    <p class="notification" aria-live="assertive"></p>
     <dialog class="modal-container">
       <div class="modal">
-        <h2>Ejemplo de un proyecto mio</h2>
+        <h2 id="modal-header">Ejemplo de un proyecto mio</h2>
         <img src="images/project1.png" alt="Un pantallazo del mi proyect">     
         <button type="button" class="modal-button">Cerrar</button>   
       </div>
